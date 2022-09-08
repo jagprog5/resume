@@ -1,0 +1,68 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{John Giorshev} % Your name
+
+\address{+1 (705)-816-4454 \\ \href{mailto:johngiorshev@gmail.com}{johngiorshev@gmail.com} \\ \href{https://github.com/jagprog5}{github.com/jagprog5}}  % Your phone number, email, linkedin, and (optional) website
+
+\begin{document}
+
+Versatile computer engineering student, with a focus on software and a passion for machine learning.\\
+Able to solve analytical problems, with a sound fundamental knowledge of engineering principles.\\
+I like to make cool stuff and stuff cool.
+
+\begin{rSection}{EDUCATION}
+\begin{itemize}
+    \item {\bf Computer Engineering} - Queen's University (GPA 3.56/4.3) \hfill {Graduating May 2023}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{EMPLOYMENT EXPERIENCE}
+\begin{itemize}
+    \item {\bf Software Intern} - \href{https://youtu.be/-21FYbKWdd0}{SpaceRyde}, a rocketry startup \hfill {Sep 2021 - Sep 2022}
+    \begin{itemize}
+        \setlength\itemsep{-0.5em}
+        \item[\textbullet] {\bf Telemetry} - Created a module for prioritization, \href{http://libtins.github.io/}{packetization}, and streaming of sensors and metrics.
+        \item[\textbullet] {\bf Simulator} - Created a 6DOF rigid body simulator for software and controls verification.\\
+        Integrated with \href{https://geographiclib.sourceforge.io/C++/doc/index.html}{GeographicLib} resources, threaded for concurrency, and \href{https://github.com/jbeder/yaml-cpp}{massively configurable}.
+        \item[\textbullet] {\bf Hardware Abstractions} - Integrated \href{https://en.wikipedia.org/wiki/Finite-state_machine}{finite state machines} and \href{https://wiki.qt.io/Qt_for_Beginners}{QT} GUIs over various components. 
+        % \item[\textbullet] {\bf Balloon Separation Mechanism} - 
+    \end{itemize}
+    \item {\bf Cyber Threat Intelligence Engineering Co-op} - Bell Canada Enterprises \hfill {Summer 2020}\\
+    Integrated a \href{https://www.misp-project.org/}{MISP} server with an \href{https://www.elastic.co/what-is/elk-stack}{ELK} pipeline. Collaborated using Confluence and Jira\\
+    Open source contributions: found \href{https://github.com/MISP/PyMISP/issues/588}{errors} in API endpoints.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Projects}
+\begin{itemize}
+    \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr}\\
+    A C++ math library for use in machine learning. Integrated with CMake, CI/CD, exhaustive unit tests and fuzzing for complete code coverage and profile guided optimization. Template specializations for data structures.
+    \item {\bf choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
+    A C++ \href{https://en.wikipedia.org/wiki/Ncurses}{Ncurses} based terminal utility for selecting tokens and creating selection dialogs.
+    \item {\bf CSV Plotter} - \href{https://github.com/jagprog5/CSV-Plotter}{jagprog5/CSV-Plotter}\\
+    Created a Python shell wrapper around \href{https://matplotlib.org/}{Matplotlib} for graphing csv data. 
+    \item {\bf Lone Vessel} - \href{https://store.steampowered.com/app/687420/Lone_Vessel/}{Steam Page}, \href{https://www.youtube.com/watch?v=X63V_5YDLC0}{Framework}
+    \hfill {(Highschool) 2016}\\
+    Gained a strong foundation in software development by publishing a video game on Steam.\\
+    Created in Java with \href{https://www.javatpoint.com/java-swing}{Swing}, \href{https://openjfx.io/}{JavaFX}, and \href{https://partner.steamgames.com/doc/api}{Steamworks}.
+    Used \href{https://www.gimp.org/}{GIMP}, \href{https://www.adobe.com/ca/products/photoshop.html}{PhotoShop}, and \href{https://www.audacityteam.org/}{Audacity} for asset creation. 
+\end{itemize}
+
+\begin{rSection}{Design Teams}
+\begin{itemize}
+    \item {\bf QMind} - Queen's AI/ML Software Team \hfill {Sep 2019 - May 2020}\\
+    Presented at \href{https://medium.com/qmind-ai/cucai2019-c9d5f848f5c}{CUCAI 2019}, a conference with over 200 people.\\
+    Used \href{https://opencv.org/}{OpenCV} and \href{https://flask.palletsprojects.com/en/2.2.x/}{Flask} to generate a heatmap API for use in a retail setting.\\
+    Completed weekly developer tasks using Git and Slack to collaborate.
+    \item {\bf Network Security Team} \hfill {Sep 2018 - May 2019}\\
+    Performed penetration testing on virtual machines with the \href{https://www.metasploit.com/}{Metasploit} framework.\\
+    Proactively learned network and operating system security to gain a strong fundamental knowledge base.
+\end{itemize}
+\end{rSection}
+
+\end{rSection}
+
+\end{document}
