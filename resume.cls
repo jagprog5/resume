@@ -25,6 +25,8 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{enumitem} % for item spacing
+\frenchspacing % no double space after period
 
 \usepackage{hyperref}
 \hypersetup{
