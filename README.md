@@ -1,6 +1,6 @@
 # resume
 
 ```bash
-apt install texlive-latex-recommended # possibly texlive-latex-extra
+apt install texlive-latex-extra texlive-fonts-extra
 pdflatex resume.tex
 ```
