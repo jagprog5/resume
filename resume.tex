@@ -20,17 +20,19 @@
         \item {\bf Software Intern} - SpaceRyde \hfill {Sep 2021 - Sep 2022}
         \begin{itemize}[topsep=-10pt]
             \setlength\itemsep{-0.35em}
-            \item[\textbullet] {\bf Telemetry} - Created a module for prioritization, \href{http://libtins.github.io/}{packetization}, and streaming of sensors and metrics.
+            \item[\textbullet] {\bf Telemetry} - Created a module for prioritization, \href{http://libtins.github.io/}{packetization}, and streaming of sensors and metrics.\\
+            Downstream dashboards using TimescaleDB and Grafana.
             \item[\textbullet] {\bf Simulator} - Created a 6DOF rigid body simulator for software and controls verification.\\
-            Integrated with ROS, GeographicLib resources, threaded for concurrency, and \href{https://github.com/jbeder/yaml-cpp}{massively configurable}.
-            \item[\textbullet] {\bf Hardware Abstractions} - Integrated finite state machines and QT GUIs over various components. 
+            Integrated with ROS2, GeographicLib resources, threaded for parallelism, and \href{https://github.com/jbeder/yaml-cpp}{massively configurable}.
+            Used to dictate design constraints and purchasing decisions.
+            \item[\textbullet] {\bf Hardware Abstractions} - Integrated FSMs and QT GUIs over components. Data acquisition. MQTT.
         \end{itemize}
         \item {\bf Cyber Threat Intelligence Engineering Co-op} - Bell Canada Enterprises \hfill {Summer 2020}
         \begin{itemize}[topsep=-10pt]
             \setlength\itemsep{-0.35em}
             \item[\textbullet] Integrated a MISP server with an Elasticsearch database using RESTful APIs.\\
-            Collaborated using Confluence and Jira. Used Docker, Docker Compose, Kafka.
-            \item[\textbullet] Mattermost (slack) notification bot for faster dissemination of Indicators of Compromise.
+            Helped to improve Bell's security information infrastructure. Collaborated using Confluence and Jira.
+            \item[\textbullet] Mattermost (slack) notification bot allowing faster team response to latest disseminated exploits.
         \end{itemize}
     \end{itemize}
 \end{rSection}
@@ -38,18 +40,18 @@
 \begin{rSection}{Projects}
     \begin{itemize}
         \item {\bf Key Value} - \href{https://keyvalue.duckdns.org/}{keyvalue.duckdns.org}\\
-        Self-hosted full-stack web app for users to store key value pairs. RUST http backend integrated with SQLite server. TLS termination using NGINX and Let's Encrypt for secure ingress.
-        Statically served JS, CSS, HTML front end. Docker Compose. Applied network security best practices.
+        Self-hosted full-stack web app for users to store key value pairs. RUST http backend integrated with SQLite. TLS termination using NGINX and Let's Encrypt for secure ingress.
+        Statically served JS, CSS, HTML frontend. Docker Compose. Applied network security best practices.
         \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr}\\
         C++ sparse math library. Template metaprogramming and specializations for data structures. Integrated with CMake, CI/CD, static analyzers, fuzzing for complete code coverage and profile guided optimization.
+        \item {\bf Data Analytics}\\
+        Implemented multi-layer perceptrons using \href{https://github.com/jagprog5/mlp}{pytorch} and \href{https://github.com/jagprog5/CNeuralNet}{C99}. \href{https://github.com/jagprog5/hopfield}{Hopfield networks}.\\
+        Created a \href{https://github.com/jagprog5/CSV-Plotter}{shell wrapper} around Matplotlib for automated graphing and screenshotting of csv data. 
+        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
+        C++ Ncurses cli utility for creating selection dialogs.
+        Uses the PCRE2 regex engine and stl unicode libraries.
         \item {\bf Conway App} - \href{https://github.com/jagprog5/conway_app/}{jagprog5/conway\_app}\\
         WASM based web and desktop GUI for Conway's Game of Life.
-        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
-        C++ Ncurses utility for creating selection dialogs.
-        Uses the PCRE2 regex engine and stl unicode libraries.
-        \item {\bf Data Analytics}\\
-        Implemented multi-layer perceptrons using \href{https://github.com/jagprog5/mlp}{pytorch} and in \href{https://github.com/jagprog5/CNeuralNet}{C99}. \href{https://github.com/jagprog5/hopfield}{Hopfield networks}.\\
-        Created a \href{https://github.com/jagprog5/CSV-Plotter}{shell wrapper} around Matplotlib for automated graphing and screenshotting of csv data. 
         \item {\bf Game Dev} - \href{https://github.com/jagprog5/GameDemo}{jagprog5/game\_demo}\\
         Java based game engine with demo. Used Photoshop, GIMP, and Audacity for asset creation.
     \end{itemize}
@@ -58,7 +60,7 @@
 \begin{rSection}{Design Teams}
     \begin{itemize}
         \item {\bf QMind} - Queen's AI/ML Software Team \hfill {Sep 2019 - May 2020}\\
-        Presented at \href{https://medium.com/qmind-ai/cucai2019-c9d5f848f5c}{CUCAI 2019}. Used OpenCV and Flask to create a computer vision API.
+        Presented at \href{https://medium.com/qmind-ai/cucai2019-c9d5f848f5c}{CUCAI 2019}. Used OpenCV and Flask to create a computer vision API for retail aisle usage.
         \item {\bf Network Security Team} \hfill {Sep 2018 - May 2019}\\
         Penetration testing on virtual machines with Metasploit. Exploited apps in a sandboxed environment.
 \end{itemize}
