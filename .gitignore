@@ -2,6 +2,6 @@
 !.gitignore
 !resume.tex
 !resume.cls
-!README.md
+!*.md
 !images/
 !images/*
