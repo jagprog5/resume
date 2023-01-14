@@ -110,7 +110,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\fontsize{18}{18}\bf #1} % Section title
+  \MakeUppercase{\fontsize{17}{17}\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
