@@ -28,7 +28,7 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{xcolor} % link color
-\definecolor{my_link_color}{rgb}{0, 0.625, 1}
+\definecolor{my_link_color}{rgb}{0, 0.55, 1}
 \usepackage[T1]{fontenc}
 \usepackage[sfdefault]{biolinum}
 \frenchspacing % no double space after period
