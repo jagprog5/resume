@@ -9,7 +9,7 @@
 
 \address{
     \scalerel*{\includegraphics{images/location.png}}{|} \href{https://www.google.com/maps/place/Greater+Toronto+Area}{Toronto, ON}\space\space\space\space\space\space
-    \scalerel*{\includegraphics{images/email.png}}{|} \href{mailto:johngiorshev@gmail.com}{johngiorshev@gmail.com}\space\space\space\space\space
+    \scalerel*{\includegraphics{images/email.png}}{|} \href{mailto:johngiorshev1@gmail.com}{johngiorshev1@gmail.com}\space\space\space\space\space
     \scalerel*{\includegraphics{images/phone.png}}{|} \href{tel:+17058164454}{705-816-4454}\space\space\space\space\space\space
     \scalerel*{\includegraphics{images/linkedin.png}}{|} \href{https://www.linkedin.com/in/johngiorshev/}{johngiorshev}
 }  % Your phone number, email, linkedin, and (optional) website
@@ -21,13 +21,11 @@
         \item {\bf Software Developer Intern} - SpaceRyde \hfill {Sep 2021 - Sep 2022}
         \begin{itemize}[topsep=-10pt]
             \setlength\itemsep{-0.35em}
-            \item[\textbullet] {\bf Telemetry} - Created a module for prioritization, packetization, and streaming of sensors and metrics.\\
-            Downstream dashboards using TimescaleDB and Grafana. Data acquisition.
-            \item[\textbullet] {\bf Simulator} - Created a 6DOF rigid body simulator for software and controls verification.\\
-            Integrated with ROS2, GeographicLib resources, threaded for parallelism, and massively configurable.
-            Used to dictate design constraints and purchasing decisions.
-            \item[\textbullet] {\bf Hardware Abstractions} - Power distribution unit. STM32 embedded development. MQTT.\\
-            Integrated FSMs and QT GUIs over various components for human interface and control.
+            \item[\textbullet] {\bf Embedded Development} - ESP32 embedded development using PlatfromIO. MQTT.
+            \item[\textbullet] {\bf User Interfaces} - Wrapped ROS2 components via QT GUIs and FSMs for human interface and control.
+            \item[\textbullet] {\bf Telemetry} - Data acquisition via LabJack. Prioritization, packetization, and streaming of sensors and metrics. Downstream dashboards with TimescaleDB and Grafana. 
+            \item[\textbullet] {\bf Simulator} - Decreased computation time of a 6DOF rigid body simulator by a factor of 50 using Eigen lib and multithreading.
+            Integrated with ROS2 and GeographicLib.
         \end{itemize}
         \item {\bf Cyber Threat Intelligence Engineering Co-op} - Bell Canada Enterprises \hfill {Summer 2020}
         \begin{itemize}[topsep=-10pt]
@@ -41,24 +39,27 @@
 
 \begin{rSection}{Projects}
     \begin{itemize}
+        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
+        Created a stream manipulator that can be \textbf{significantly faster} than standard tools including GNU sed and GNU sort.
+        Uses the PCRE2 regex C API for pattern matching and Ncurses C API for TUIs.
         \item {\bf Key Value} - \href{http://www.keyvalue.ca/}{keyvalue.ca}\\
-        Self-hosted full-stack web app for users to store key value pairs. Rust HTTP backend integrated with SQLite. TLS termination using NGINX and Let's Encrypt for secure ingress. Statically served JS, CSS, HTML.\\
-        Docker Compose. Applied security best practices (salted password hashes, session tokens, rate limiting).
+        HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Rust HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.
+        \item {\bf Terminal} - \href{https://github.com/jagprog5/terminal}{jagprog5/terminal}\\
+        Psuedo-terminal interface using linux syscalls and SDL2 rendering. Supports UTF8 and ANSI escape codes.
         \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr}\\
-        C++ sparse math library. Template metaprogramming and specializations for data structures. Integrated with CMake, CI/CD, static analyzers, fuzzing for complete code coverage and profile guided optimization.
+        C++ sparse math library. Template metaprogramming and specializations for data structures. Profile guided optimization. Integrated with CMake, CI/CD: static analyzers, fuzzy testing for complete code coverage.
+        \item {\bf AWS Log Uploader}\\
+        Created a multithreaded utility that tracks a log folder and uploads to AWS CloudWatch using boto3. Robust to sudden interruption and prolonged internet outage.
         \item {\bf Data Analytics} - \href{https://github.com/jagprog5/resume/blob/main/data-analytics-projects.md}{jagprog5/data-analytics}\\
         Implemented multi-layer perceptrons using PyTorch and C99. Implemented hopfield networks.\\
         Used various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization. 
-        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
-        Command line interface for lexical analysis and selection dialogs. Regex and unicode support.\\
-        Useful for running a line from bash history.
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Design Teams}
     \begin{itemize}
         \item {\bf QMind} - Queen's AI/ML Software Team \hfill {Sep 2019 - May 2020}\\
-        Presented at \href{https://medium.com/qmind-ai/cucai2019-c9d5f848f5c}{CUCAI 2019}. Used OpenCV and Flask to create a computer vision API for retail aisle usage.
+        Presented at \href{https://medium.com/@cameronmackinn/cucai-2020-c821c15f3ab4}{CUCAI 2020}. Used OpenCV and Flask to create a computer vision API.
         \item {\bf Network Security Team} \hfill {Sep 2018 - May 2019}\\
         Penetration testing on virtual machines with Metasploit. Exploited apps in a sandboxed environment.
 \end{itemize}
@@ -66,7 +67,7 @@
 
 \begin{rSection}{EDUCATION}
     \begin{itemize}
-        \item {\bf Computer Engineering} - Queen's University (First Class Honours) \hfill {Graduating May 2023}
+        \item {\bf Computer Engineering} - Queen's University (First Class Honours) \hfill {Sep 2018 - May 2023}
     \end{itemize}
 \end{rSection}
 
