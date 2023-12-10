@@ -82,7 +82,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\fontsize{30}{30}\bf \@name}\hfil
+    \hfil{\fontsize{25}{25}\bf \@name}\hfil
     \nameskip\break
   \endgroup
 }
@@ -135,7 +135,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.1em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
