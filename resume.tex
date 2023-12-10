@@ -2,7 +2,8 @@
 \usepackage{enumitem} % for item spacing
 \usepackage{scalerel} % for inline images
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.2in,right=0.4 in,bottom=0.2in]{geometry} % Document margins
+\usepackage{xcolor}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{JOHN GIORSHEV} % Your name
@@ -16,52 +17,61 @@
 
 \begin{document}
 
+Legally authorized to work in the United States.
+
 \begin{rSection}{EMPLOYMENT EXPERIENCE}
     \begin{itemize}
+        \item {\bf ECE1724H TA (Embedded development)} - University of Toronto \hfill {Sep 2023 - Jan 2024}
+        \begin{itemize}[topsep=-10pt]
+            \setlength\itemsep{-0.5em}
+                \item[\textbullet] {\bf Special Topics in Computing} - \textcolor{darkgray}{Wearable AI, Building Superintelligence for People}
+            \end{itemize}
         \item {\bf Software Developer Intern} - SpaceRyde \hfill {Sep 2021 - Sep 2022}
         \begin{itemize}[topsep=-10pt]
-            \setlength\itemsep{-0.35em}
-            \item[\textbullet] {\bf Embedded Development} - ESP32 embedded development using PlatfromIO. MQTT.
-            \item[\textbullet] {\bf User Interfaces} - Wrapped ROS2 components via QT GUIs and FSMs for human interface and control.
-            \item[\textbullet] {\bf Telemetry} - Data acquisition via LabJack. Prioritization, packetization, and streaming of sensors and metrics. Downstream dashboards with TimescaleDB and Grafana. 
-            \item[\textbullet] {\bf Simulator} - Decreased computation time of a 6DOF rigid body simulator by a factor of 50 using Eigen lib and multithreading.
-            Integrated with ROS2 and GeographicLib.
+            \setlength\itemsep{-0.5em}
+            \item[\textbullet] {\bf Embedded Development} - \textcolor{darkgray}{ESP32 embedded development using PlatfromIO. MQTT.}
+            \item[\textbullet] {\bf User Interfaces} - \textcolor{darkgray}{Wrapped ROS2 components via QT GUIs and FSMs for human interface and control.}
+            \item[\textbullet] {\bf Telemetry} - \textcolor{darkgray}{Data acquisition via LabJack. Prioritization, packetization, and streaming of sensors and metrics. Downstream dashboards with TimescaleDB and Grafana.}
+            \item[\textbullet] {\bf Simulator} - \textcolor{darkgray}{Decreased computation time of a 6DOF rigid body simulator \textbf{by 50x} using Eigen lib and parallelism.
+            Integrated with ROS2 and GeographicLib.}
         \end{itemize}
         \item {\bf Cyber Threat Intelligence Engineering Co-op} - Bell Canada Enterprises \hfill {Summer 2020}
         \begin{itemize}[topsep=-10pt]
-            \setlength\itemsep{-0.35em}
-            \item[\textbullet] Integrated a MISP server with an Elasticsearch database using RESTful APIs. Elastic Stack. Kafka.\\
-            Improved Bell's security information infrastructure. Collaborated using Confluence and Jira.
-            \item[\textbullet] Mattermost (slack) notification bot allowing faster team response to latest disseminated exploits.
+            \setlength\itemsep{-0.5em}
+            \item[\textbullet] \textcolor{darkgray}{Integrated a MISP server with an Elasticsearch database using RESTful APIs. Elastic Stack. Kafka.}
+            \item[\textbullet] \textcolor{darkgray}{Improved Bell's security information infrastructure. Collaborated using Confluence and Jira.}
+            \item[\textbullet] \textcolor{darkgray}{Mattermost (slack) notification bot allowing faster team response to latest disseminated exploits.}
         \end{itemize}
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Projects}
     \begin{itemize}
-        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose}\\
-        Created a stream manipulator that can be \textbf{significantly faster} than standard tools including GNU sed and GNU sort.
-        Uses the PCRE2 regex C API for pattern matching and Ncurses C API for TUIs.
-        \item {\bf Key Value} - \href{http://www.keyvalue.ca/}{keyvalue.ca}\\
-        HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Rust HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.
-        \item {\bf Terminal} - \href{https://github.com/jagprog5/terminal}{jagprog5/terminal}\\
-        Psuedo-terminal interface using linux syscalls and SDL2 rendering. Supports UTF8 and ANSI escape codes.
-        \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr}\\
-        C++ sparse math library. Template metaprogramming and specializations for data structures. Profile guided optimization. Integrated with CMake, CI/CD: static analyzers, fuzzy testing for complete code coverage.
-        \item {\bf AWS Log Uploader}\\
-        Created a multithreaded utility that tracks a log folder and uploads to AWS CloudWatch using boto3. Robust to sudden interruption and prolonged internet outage.
-        \item {\bf Data Analytics} - \href{https://github.com/jagprog5/resume/blob/main/data-analytics-projects.md}{jagprog5/data-analytics}\\
-        Implemented multi-layer perceptrons using PyTorch and C99. Implemented hopfield networks.\\
-        Used various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization. 
+        \setlength\itemsep{-0.2em}
+        \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose} \hfill C++\\
+        \textcolor{darkgray}{Created a stream manipulator that can be \textbf{up to 100x faster} than standard tools including GNU sed.
+        Uses the PCRE2 regex C API for pattern matching and Ncurses C API for TUIs.}
+        \item {\bf Key Value} - \href{http://www.keyvalue.ca/}{keyvalue.ca} (hosting OpenVPN access server at \href{keyvalue.ca:943}{keyvalue.ca:943})\hfill Rust\\
+        \textcolor{darkgray}{HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Actix Web HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.}
+        \item {\bf Game Engine} - \href{https://github.com/jagprog5/game_engine/}{jagprog5/game\_engine} \hfill Rust\\
+        \textcolor{darkgray}{(in progress) Creating a 2D game engine built on SDL2 featuring full persistance (serde).}
+        \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr} \hfill C++\\
+        \textcolor{darkgray}{Sparse array library. Template metaprogramming and specializations for data structures. Profile guided optimization. Integrated with CMake, CI/CD: static analyzers, fuzzy testing for complete code coverage.}
+        \item {\bf AWS Log Uploader} \hfill Python\\
+        \textcolor{darkgray}{Created a multithreaded utility that tracks a log folder and uploads to AWS CloudWatch using boto3.\\
+        Robust to sudden interruption and prolonged internet outage.}
+        \item {\bf Data Analytics} - \href{https://github.com/jagprog5/resume/blob/main/data-analytics-projects.md}{jagprog5/data-analytics} \hfill Python\\
+        \textcolor{darkgray}{Implemented multi-layer perceptrons using PyTorch and C. Implemented hopfield networks.\\
+        Used various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization.}
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Design Teams}
     \begin{itemize}
         \item {\bf QMind} - Queen's AI/ML Software Team \hfill {Sep 2019 - May 2020}\\
-        Presented at \href{https://medium.com/@cameronmackinn/cucai-2020-c821c15f3ab4}{CUCAI 2020}. Used OpenCV and Flask to create a computer vision API.
+        \textcolor{darkgray}{Presented at \href{https://medium.com/@cameronmackinn/cucai-2020-c821c15f3ab4}{CUCAI 2020}. Used OpenCV and Flask to create a computer vision API.}
         \item {\bf Network Security Team} \hfill {Sep 2018 - May 2019}\\
-        Penetration testing on virtual machines with Metasploit. Exploited apps in a sandboxed environment.
+        \textcolor{darkgray}{Penetration testing on virtual machines with Metasploit. Exploited apps in a sandboxed environment.}
 \end{itemize}
 \end{rSection}
 

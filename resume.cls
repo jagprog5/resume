@@ -82,7 +82,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\fontsize{30}{30}\bf \@name}\hfil
+    \hfil{\fontsize{21}{21}\bf \@name}\hfil
     \nameskip\break
   \endgroup
 }
@@ -110,7 +110,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\fontsize{17}{17}\bf #1} % Section title
+  \MakeUppercase{\fontsize{15}{15}\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
@@ -135,7 +135,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.1em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
