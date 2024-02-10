@@ -2,14 +2,14 @@
 \usepackage{enumitem} % for item spacing
 \usepackage{scalerel} % for inline images
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.2in,right=0.4 in,bottom=0.2in]{geometry} % Document margins
 \usepackage{xcolor}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{JOHN GIORSHEV} % Your name
 
 \address{
-    \scalerel*{\includegraphics{images/location.png}}{|} \href{https://www.google.com/maps/place/Greater+Toronto+Area}{Toronto, ON}\space\space\space\space\space\space
+    \scalerel*{\includegraphics{images/github_logo.png}}{|} \href{https://github.com/jagprog5/}{jagprog5}\space\space\space\space\space
     \scalerel*{\includegraphics{images/email.png}}{|} \href{mailto:johngiorshev1@gmail.com}{johngiorshev1@gmail.com}\space\space\space\space\space
     \scalerel*{\includegraphics{images/phone.png}}{|} \href{tel:+17058164454}{705-816-4454}\space\space\space\space\space\space
     \scalerel*{\includegraphics{images/linkedin.png}}{|} \href{https://www.linkedin.com/in/johngiorshev/}{johngiorshev}
@@ -17,23 +17,26 @@
 
 \begin{document}
 
-A recently graduated software developer specializing in backend and embedded development.\\
-Authorized to work legally in the United States.
+Recently graduated software developer skilled in backend and embedded development. Passionate about\\
+deploying clean and verifiably correct software. United States citizen.
 
 \begin{rSection}{EDUCATION}
     \begin{itemize}
-        \item {\bf Computer Engineering} - Queen's University (First Class Honours) \hfill {Sep 2018 - May 2023}
+        \item {\bf Courses toward MASc in Computer Engineering} - University of Toronto \hfill {Sep 2023 - Jan 2024}
+    \end{itemize}
+    \begin{itemize}
+        \item {\bf BASc in Computer Engineering} - Queen's University (First Class Honours) \hfill {Sep 2018 - May 2023}
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{EMPLOYMENT EXPERIENCE}
     \begin{itemize}
-        \item {\bf ECE1724H Teacher's Assistant (Embedded development)} - University of Toronto \hfill {Sep 2023 - Jan 2024}
+        \item {\bf ECE1724H Teaching Assistant (Embedded development)} - University of Toronto \hfill {Sep 2023 - Jan 2024}
         \begin{itemize}[topsep=-10pt]
             \setlength\itemsep{-0.5em}
                 \item[\textbullet] {\bf Special Topics in Computing} - \textcolor{darkgray}{Wearable Interfaces}
             \end{itemize}
-        \item {\bf Software Developer Intern} - SpaceRyde (full-time) \hfill {Sep 2021 - Sep 2022}
+        \item {\bf Software Development Intern} - SpaceRyde (full-time) \hfill {Sep 2021 - Sep 2022}
         \begin{itemize}[topsep=-10pt]
             \setlength\itemsep{-0.5em}
             \item[\textbullet] {\bf Simulator} - \textcolor{darkgray}{Increased the speed of a rigid body simulator \textbf{by 50x} using Eigen-lib and parallelism.}
@@ -50,15 +53,14 @@ Authorized to work legally in the United States.
     \end{itemize}
 \end{rSection}
 
-\begin{rSection}{Projects}
-    I pursued these projects independently from my academic coursework, aiming to develop specific skills and showcase my expertise. I thrive in domains that demand both speed and reliability
+\begin{rSection}{Personal Projects}
     \begin{itemize}
         \setlength\itemsep{-0.2em}
         \item {\bf Key Value} - \href{http://www.keyvalue.ca/}{keyvalue.ca} (networking, DNS, SSL/TLS, containerization, databases)\hfill Rust\\
         \textcolor{darkgray}{HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Actix Web HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.\\
         Hosting OpenVPN access server at \href{keyvalue.ca:943}{keyvalue.ca:943}.}
         \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose} (CLI, CI/CD, software validation, regex)\hfill C++17\\
-        \textcolor{darkgray}{Created a stream manipulator with benchmarks showing it's \textbf{up to 100x faster} than standard tools including GNU sed.
+        \textcolor{darkgray}{Created a stream manipulator benchmarked at \textbf{up to 100x faster} than standard tools including GNU sed.
         Uses the PCRE2 regex C API for pattern matching and Ncurses C API for TUIs.}
         \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr} (STL, data-structures, debugging, fuzzing) \hfill C++17\\
         \textcolor{darkgray}{Sparse array library. Template metaprogramming and specializations for data structures. Profile guided optimization. Integrated with CMake, CI/CD: static analyzers, fuzzy testing for complete code coverage.}
@@ -66,9 +68,14 @@ Authorized to work legally in the United States.
         \textcolor{darkgray}{Created a multithreaded utility that tracks a log folder and uploads to AWS CloudWatch using boto3.\\
         Robust to sudden interruption and prolonged internet outage.}
         \item {\bf Data Analytics} - \href{https://github.com/jagprog5/resume/blob/main/data-analytics-projects.md}{jagprog5/data-analytics} \hfill Python\\
-        \textcolor{darkgray}{Implemented multi-layer perceptrons using PyTorch and C. Implemented hopfield networks.\\
-        Used various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization.}
+        \textcolor{darkgray}{Implemented multi-layer perceptrons using PyTorch and C. Implemented Hopfield networks. Trained and tested various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization.}
     \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Skills}
+    {\bf Technical Skills}: Deep Learning, Data Analytics, Computer Networks, DNS, SSL/TLS, Linux, CI/CD, Git\\
+    {\bf Programming Languages}: C/C++, Rust, Python, Java, Bash, JavaScript, CSS, HTML, VHDL\\
+    {\bf Frameworks}: MySQL, Flask, PyTorch, Matplotlib, OpenCV, Elastic Stack, AWS, Docker, Docker Compose, ROS2\\
 \end{rSection}
 
 \end{document}
