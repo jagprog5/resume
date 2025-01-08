@@ -17,13 +17,9 @@
 
 \begin{document}
 
-Recently graduated software developer skilled in backend and embedded development. Passionate about\\
-deploying clean and verifiably correct software. United States citizen.
+Passionate about deploying clean and safe software. United States citizen.
 
 \begin{rSection}{EDUCATION}
-    \begin{itemize}
-        \item {\bf Courses toward MASc in Computer Engineering} - University of Toronto \hfill {Sep 2023 - Jan 2024}
-    \end{itemize}
     \begin{itemize}
         \item {\bf BASc in Computer Engineering} - Queen's University (First Class Honours) \hfill {Sep 2018 - May 2023}
     \end{itemize}
@@ -31,50 +27,49 @@ deploying clean and verifiably correct software. United States citizen.
 
 \begin{rSection}{EMPLOYMENT EXPERIENCE}
     \begin{itemize}
-        \item {\bf ECE1724H Teaching Assistant (Embedded development)} - University of Toronto \hfill {Sep 2023 - Jan 2024}
-        \begin{itemize}[topsep=-10pt]
-            \setlength\itemsep{-0.5em}
-                \item[\textbullet] {\bf Special Topics in Computing} - \textcolor{darkgray}{Wearable Interfaces}
+        \item {\bf Software Developer} - InfoSec Global \hfill {Apr 2024 - Present}
+        \begin{itemize}[topsep=-8pt]
+            \setlength\itemsep{-0.3em}
+                \item[\textbullet] {\bf Database Connectors (golang)} - \textcolor{darkgray}{Developed programs deployed in large banks and telecoms. Integrated
+                certificate repositories including Azure Key Vault and Keyfactor with InfoSec’s OpenSearch Stack.}
+                \item[\textbullet] {\bf Host Sensor} - \textcolor{darkgray}{Created an orchestration tool which performs scans and exports to ingestion services.}
+                \item[\textbullet] {\bf Source Code SAST} - \textcolor{darkgray}{Made scanners with Semgrep, YARA, and Trivy for crypto. inventory and flagging.}
             \end{itemize}
-        \item {\bf Software Development Intern} - SpaceRyde (full-time) \hfill {Sep 2021 - Sep 2022}
-        \begin{itemize}[topsep=-10pt]
-            \setlength\itemsep{-0.5em}
+        \item {\bf Software Developer (One Year Internship)} - SpaceRyde \hfill {Sep 2021 - Sep 2022}
+        \begin{itemize}[topsep=-8pt]
+            \setlength\itemsep{-0.3em}
             \item[\textbullet] {\bf Simulator} - \textcolor{darkgray}{Increased the speed of a rigid body simulator \textbf{by 50x} using Eigen-lib and parallelism.}
-            \item[\textbullet] {\bf Telemetry} - \textcolor{darkgray}{Created a sensor pipeline. Data acquisition via LabJack. Prioritization, packetization, and streaming of sensors and metrics. Downstream dashboards with TimescaleDB and Grafana.}
-            \item[\textbullet] {\bf User Interfaces} - \textcolor{darkgray}{Abstracted hardware via QT GUIs for human interface and control.}
-        \end{itemize}
-        \item {\bf Cyber Threat Intelligence Engineering Co-op} - Bell Canada Enterprises (full-time) \hfill {Summer 2020}
-        \begin{itemize}[topsep=-10pt]
-            \setlength\itemsep{-0.5em}
-            \item[\textbullet] \textcolor{darkgray}{Integrated a MISP server with an Elasticsearch database using RESTful APIs. Elastic Stack. Kafka.}
+            \item[\textbullet] {\bf Telemetry} - \textcolor{darkgray}{Created a sensor pipeline. Data acquisition. Streaming of sensors and metrics.}
+            \item[\textbullet] {\bf User Interfaces} - \textcolor{darkgray}{Created interfaces in QT for control of hardware.}
+            \item[\textbullet] {\bf Log Uploader} - \textcolor{darkgray}{Created a robust utility that uploads to AWS CloudWatch for log redundancy.}
+            \end{itemize}
+        \item {\bf Cyber Threat Intelligence Engineering (Summer Co-op)} - Bell Canada \hfill {May 2020 - Sep 2020}
+        \begin{itemize}[topsep=-8pt]
+            \setlength\itemsep{-0.3em}
+            \item[\textbullet] \textcolor{darkgray}{Integrated a MISP server with an Elasticsearch database using RESTful APIs. Elastic Stack.}
             \item[\textbullet] \textcolor{darkgray}{Created a mattermost (slack) notification bot allowing faster dissemination of vulnerabilities.}
-            \item[\textbullet] \textcolor{darkgray}{Improved Bell's information security infrastructure. Collaborated using Confluence and Jira.}
         \end{itemize}
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Personal Projects}
     \begin{itemize}
-        \setlength\itemsep{-0.2em}
+        \setlength\itemsep{-0.3em}
         \item {\bf Key Value} - \href{http://www.keyvalue.ca/}{keyvalue.ca} (networking, DNS, SSL/TLS, containerization, databases)\hfill Rust\\
-        \textcolor{darkgray}{HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Actix Web HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.\\
-        Hosting OpenVPN access server at \href{keyvalue.ca:943}{keyvalue.ca:943}.}
+        \textcolor{darkgray}{HTTPS enabled self-hosted web site for users to store key value pairs. Docker Compose. Actix Web HTTP backend integrated with SQLite. TLS termination with NGINX and Let's Encrypt for secure ingress.}
+        \item {\bf SDL Rust UI} - \href{https://github.com/jagprog5/sdl-rust-ui}{jagprog5/sdl-rust-ui} \hfill Rust\\
+        \textcolor{darkgray}{Creating an immediate mode user interface library in Rust using an SDL2 backend.}
         \item {\bf Choose} - \href{https://github.com/jagprog5/choose/}{jagprog5/choose} (CLI, CI/CD, software validation, regex)\hfill C++17\\
         \textcolor{darkgray}{Created a stream manipulator benchmarked at \textbf{up to 100x faster} than standard tools including GNU sed.
         Uses the PCRE2 regex C API for pattern matching and Ncurses C API for TUIs.}
-        \item {\bf Sparse Distributed Representation} - \href{https://github.com/jagprog5/SDR/}{jagprog5/sdr} (STL, data-structures, debugging, fuzzing) \hfill C++17\\
-        \textcolor{darkgray}{Sparse array library. Template metaprogramming and specializations for data structures. Profile guided optimization. Integrated with CMake, CI/CD: static analyzers, fuzzy testing for complete code coverage.}
-        \item {\bf AWS Log Uploader} (web services, REST APIs, multithreading)\hfill Python\\
-        \textcolor{darkgray}{Created a multithreaded utility that tracks a log folder and uploads to AWS CloudWatch using boto3.\\
-        Robust to sudden interruption and prolonged internet outage.}
         \item {\bf Data Analytics} - \href{https://github.com/jagprog5/resume/blob/main/data-analytics-projects.md}{jagprog5/data-analytics} \hfill Python\\
-        \textcolor{darkgray}{Implemented multi-layer perceptrons using PyTorch and C. Implemented Hopfield networks. Trained and tested various sklearn models on Kaggle datasets. Created a shell wrapper of Matplotlib for data visualization.}
+        \textcolor{darkgray}{Implemented multi-layer perceptrons from scratch in C99. Implemented Hopfield networks. \hfill  \break Trained and tested various sklearn models on Kaggle datasets.}
     \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Skills}
-    {\bf Technical Skills}: Deep Learning, Data Analytics, Computer Networks, DNS, SSL/TLS, Linux, CI/CD, Git\\
-    {\bf Programming Languages}: C/C++, Rust, Python, Java, Bash, JavaScript, CSS, HTML, VHDL\\
+    {\bf Technical Skills}: Machine Learning, Computer Networks, DNS, SSL/TLS, Linux, CI/CD, Git\\
+    {\bf Programming Languages}: Go, Rust, C/C++, Python, Ruby, Java\\
     {\bf Frameworks}: MySQL, Flask, PyTorch, Matplotlib, OpenCV, Elastic Stack, AWS, Docker, Docker Compose, ROS2\\
 \end{rSection}
 
